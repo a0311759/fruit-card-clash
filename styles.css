@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f1f1; /* Pinkish white background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff; /* White background for container */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Soft shadow */
+    padding: 30px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px; /* Larger padding */
+    font-size: 20px; /* Larger font size */
+    background-color: #e91e63; /* Pink button color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Light gray background for result */
+    text-align: center;
+}
+
+#playerCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    cursor: pointer;
+    font-size: 40px; /* Larger icon size */
+    margin: 10px; /* Increased margin */
+}
+
+.goal-paragraph {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 36px; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: #e91e63; /* Pink color */
+    margin: 0; /* Remove default margin */
+}
+
+.label {
+    font-size: 18px; /* Font size for label */
+    color: #555; /* Dark gray color */
+}
+
+/* Mobile-friendly adjustments */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+    .card {
+        font-size: 32px; /* Adjusted font size for smaller screens */
+        margin: 5px; /* Reduced margin for smaller screens */
+    }
+    h1 {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+        padding-top: 20px;
+    }
+}
